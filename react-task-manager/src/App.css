@@ -1,0 +1,107 @@
+/* Center and style the entire app container */
+.app {
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Arrange items vertically */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  min-height: 100vh; /* Ensure full viewport height */
+  background-color: #f9f9f9; /* Light gray background */
+  font-family: Arial, sans-serif; /* Set default font */
+}
+
+/* Main task manager container styling */
+.task-manager {
+  width: 100%; /* Full width */
+  max-width: 600px; /* Limit maximum width */
+  background: white; /* White background */
+  padding: 20px; /* Inner padding */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Input section styling */
+.task-input {
+  display: flex; /* Align input elements in a row */
+  gap: 10px; /* Space between elements */
+  margin-bottom: 20px; /* Space below the section */
+}
+
+.task-input input,
+.task-input select {
+  padding: 10px; /* Inner padding for inputs */
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 4px; /* Rounded corners */
+  flex: 1; /* Allow inputs to grow */
+}
+
+.task-input button {
+  padding: 10px 20px; /* Button padding */
+  background-color: #007bff; /* Primary blue color */
+  color: white; /* White text */
+  border: none; /* Remove default border */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Task list container styling */
+.task-list {
+  list-style: none; /* Remove bullets */
+  padding: 0; /* Remove default padding */
+}
+
+.task-list li {
+  display: flex; /* Align task content and buttons in a row */
+  justify-content: space-between; /* Space between task and buttons */
+  align-items: center; /* Align items vertically */
+  padding: 10px; /* Inner padding */
+  border-bottom: 1px solid #ddd; /* Bottom border for separation */
+}
+
+/* Styling for completed tasks */
+.task-list li.completed span {
+  text-decoration: line-through; /* Strike-through text */
+  color: gray; /* Gray text color */
+}
+
+/* Style for input and select elements within the task list */
+.task-list input,
+.task-list select {
+  padding: 5px; /* Inner padding */
+  margin-right: 10px; /* Space on the right */
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 4px; /* Rounded corners */
+}
+
+/* Buttons inside the task list */
+.task-list button {
+  margin-left: 5px; /* Space between buttons */
+  background-color: #007bff; /* Default blue color */
+  color: white; /* White text */
+  border: none; /* Remove default border */
+  padding: 5px 10px; /* Padding for buttons */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Button hover effect */
+.task-list button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Style for different action buttons */
+.task-list button:nth-child(2) {
+  background-color: #28a745; /* Green for 'Save' button */
+}
+
+.task-list button:nth-child(3) {
+  background-color: red; /* Red for 'Delete' button */
+}
+
+/* Filters section styling */
+.filters button {
+  margin-right: 10px; /* Space between filter buttons */
+  padding: 5px 10px; /* Button padding */
+  border: 1px solid #ddd; /* Light border */
+  background-color: #f0f0f0; /* Light gray background */
+  cursor: pointer; /* Pointer cursor on hover */
+}
